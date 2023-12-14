@@ -45,5 +45,12 @@
     </section>
 
     <script src="script.js"></script>
+    <!-- Script for triggering YouTube video autoplay -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var video = document.getElementById("youtube-video");
+            video.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+        });
+    </script>
 </body>
 </html>
