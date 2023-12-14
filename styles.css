@@ -1,0 +1,42 @@
+/* styles.css */
+
+body {
+   font-family: 'Arial', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f8f8f8;
+}
+
+header {
+   background-color: #ffd700;
+   text-align: center;
+   padding: 20px;
+}
+
+header img {
+   max-width: 100%;
+   height: auto;
+}
+
+#birthday-message {
+   text-align: center;
+   padding: 20px;
+}
+
+#music-player {
+   text-align: center;
+   padding: 20px;
+}
+
+#virtual-gift {
+   text-align: center;
+   padding: 20px;
+}
+
+#gift-box {
+   background-color: #ff4500;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 8px;
+   cursor: pointer;
+}
