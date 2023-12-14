@@ -14,6 +14,8 @@
         <img src="balloons-confetti_1048-6747.jpeg" alt="Ballons and Confetti">
     </header>
 
+    <button onclick="startCelebration()">Click Me!</button>
+    
     <!-- Birthday Message -->
     <section id="birthday-message">
         <p>Dear future Doctor, past lover and my past, present and future love,</p>
@@ -45,12 +47,27 @@
     </section>
 
     <script src="script.js"></script>
-    <!-- Script for triggering YouTube video autoplay -->
+
+        <!-- Script for triggering YouTube video autoplay and displaying balloons -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var video = document.getElementById("youtube-video");
-            video.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-        });
+        function startCelebration() {
+            // Create a new image element for the pics
+            var balloonsImage = document.createElement("img");
+
+            // Set the source attribute to the path of your balloons image
+            balloonsImage.src = "balloons.jpg";
+
+            // Set additional styles or attributes if needed
+            balloonsImage.style.width = "100px"; // Adjust the width as needed
+
+            // Append the image to the document body
+            document.body.appendChild(balloonsImage);
+
+            // Trigger the YouTube video song
+            var audio = new Audio('https://www.youtube.com/embed/f1QODR9wUno?autoplay=1');
+            audio.play();
+        }
     </script>
+
 </body>
 </html>
