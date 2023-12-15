@@ -5,27 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday!!!</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            margin: 20px;
-            /* Set background only during countdown */
-            background: url('soon_birthday.gif') no-repeat center center fixed;
-            background-size: contain;
-        }
-
-        #countdown-heading {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #000000; /* Set text color to white for better visibility on the background */
-        }
-
-        #birthday-content {
-            display: none;
-            color: #fff; /* Set text color to white for better visibility on the background */
-        }
-    </style>
 </head>
 <body>
 
@@ -98,7 +77,7 @@
 
     <script>
         // Set the target date and time for the countdown (YYYY, MM (0-11), DD, HH, MM, SS)
-        var targetDate = new Date(2023, 11, 15, 16, 54, 0); // December 27, 2023, 12:00:00 AM
+        var targetDate = new Date(2023, 11, 15, 17, 44, 0); // December 27, 2023, 12:00:00 AM
 
         // Update the countdown every second
         var countdownInterval = setInterval(updateCountdown, 1000);
@@ -128,7 +107,7 @@
                 document.getElementById('countdown-heading').style.display = 'none'; // Hide the countdown heading
                 document.getElementById('birthday-content').style.display = 'block';
                 // Hide the background after countdown
-                // document.body.classList.remove('show-background');
+                document.body.classList.remove('show-background');
             }
         }
     </script>
