@@ -41,6 +41,7 @@ body.show-background {
 
 #countdown-heading {
     font-size: 24px;
+    text-align: center;
     margin-bottom: 20px;
     color: #000000; /* Set text color to black for better visibility on the background */
 }
