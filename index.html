@@ -10,7 +10,7 @@
             font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 20px;
-            background: url(https://github.com/Amrit2608/birthday-website/blob/main/soon_birthday.gif) no-repeat center center fixed; 
+            background: url(soon_birthday.gif) no-repeat center center fixed; 
             background-size: cover;
         }
 
@@ -94,7 +94,7 @@
 
     <script>
         // Set the target date and time for the countdown (YYYY, MM (0-11), DD, HH, MM, SS)
-        var targetDate = new Date(2023, 11, 15, 16, 15, 0); // December 27, 2023, 00:00:00 AM
+        var targetDate = new Date(2023, 11, 15, 16, 25, 0); // December 27, 2023, 00:00:00 AM
 
         // Update the countdown every second
         var countdownInterval = setInterval(updateCountdown, 1000);
@@ -104,6 +104,7 @@
             var timeDifference = targetDate - currentDate;
 
             if (timeDifference > 0) {
+                document.body.classList.add('show-background');
                 var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
                 var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
@@ -120,6 +121,7 @@
                 document.getElementById('countdown').style.display = 'none';
                 document.getElementById('birthday-content').style.display = 'block';
                 document.getElementById('countdown-heading').style.display = 'none';
+                document.body.classList.remove('show-background');
             }
         }
     </script>
