@@ -49,7 +49,7 @@
             </div>
             <div id="hidden-message" style="display: none;">
                 <p>Surprise! You mean the world to me, and I'm grateful to celebrate your special day with you. Happy Birthday!</p>
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/al-amin-monshi/tumi_jantei_paronaa-e0-a6-a4&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>
+                <iframe id="soundcloud-player" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/al-amin-monshi/tumi_jantei_paronaa-e0-a6-a4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false" style="display: none;"></iframe>
         </section>
             </div>
             <!-- Video element with autoplay -->
@@ -67,6 +67,13 @@
                 // Show the hidden message
                 var hiddenMessage = document.getElementById("hidden-message");
                 hiddenMessage.style.display = "block";
+
+                // Show the SoundCloud player
+                var soundcloudPlayer = document.getElementById("soundcloud-player");
+                soundcloudPlayer.style.display = "block";
+
+                // Play the SoundCloud song
+                soundcloudPlayer.contentWindow.postMessage('{"event":"command","func":"' + 'play' + '","args":""}', '*');
 
                 // Show the video
                 var birthdayVideo = document.getElementById("birthday-video");
