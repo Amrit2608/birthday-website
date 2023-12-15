@@ -53,5 +53,5 @@ body.show-background {
 
 #birthday-content {
     display: none;
-    color: #fff; /* Set text color to white for better visibility on the background */
+    color: #000000; /* Set text color to white for better visibility on the background */
 }
