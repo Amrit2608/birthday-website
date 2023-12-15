@@ -37,11 +37,15 @@ header img {
 body.show-background {
     background: url('soon_birthday.gif') no-repeat center center fixed;
     background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the background covers the entire viewport */
 }
 
 #countdown-heading {
     font-size: 24px;
-    text-align: center;
     margin-bottom: 20px;
     color: #000000; /* Set text color to black for better visibility on the background */
 }
