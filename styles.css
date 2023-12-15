@@ -1,42 +1,51 @@
 /* styles.css */
 
 body {
-   font-family: 'Arial', sans-serif;
-   margin: 0;
-   padding: 0;
-   background-color: #f8f8f8;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Set your desired background color */
 }
 
 header {
-   background-color: #ffd700;
-   text-align: center;
-   padding: 20px;
+    background-color: #ffd700;
+    text-align: center;
+    padding: 20px;
 }
 
 header img {
-   max-width: 100%;
-   height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
-#birthday-message {
-   text-align: center;
-   padding: 20px;
-}
-
-#music-player {
-   text-align: center;
-   padding: 20px;
-}
-
+#birthday-message,
+#music-player,
 #virtual-gift {
-   text-align: center;
-   padding: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
 #gift-box {
-   background-color: #ff4500;
-   color: #fff;
-   padding: 10px 20px;
-   border-radius: 8px;
-   cursor: pointer;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Additional styles for countdown page */
+body.show-background {
+    background: url('soon_birthday.gif') no-repeat center center fixed;
+    background-size: contain;
+}
+
+#countdown-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000; /* Set text color to black for better visibility on the background */
+}
+
+#birthday-content {
+    display: none;
+    color: #fff; /* Set text color to white for better visibility on the background */
 }
