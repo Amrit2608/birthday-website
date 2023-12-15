@@ -17,7 +17,7 @@
         #countdown-heading {
             font-size: 24px;
             margin-bottom: 20px;
-            color: #fff; /* Set text color to white for better visibility on the background */
+            color: #000000; /* Set text color to white for better visibility on the background */
         }
 
         #birthday-content {
@@ -97,7 +97,7 @@
 
     <script>
         // Set the target date and time for the countdown (YYYY, MM (0-11), DD, HH, MM, SS)
-        var targetDate = new Date(2023, 11, 15, 16, 38, 0); // December 27, 2023, 12:00:00 AM
+        var targetDate = new Date(2023, 11, 15, 16, 44, 0); // December 27, 2023, 12:00:00 AM
 
         // Update the countdown every second
         var countdownInterval = setInterval(updateCountdown, 1000);
@@ -127,7 +127,7 @@
                 document.getElementById('countdown-heading').style.display = 'none'; // Hide the countdown heading
                 document.getElementById('birthday-content').style.display = 'block';
                 // Hide the background after countdown
-                document.body.classList.remove('show-background');
+                // document.body.classList.remove('show-background');
             }
         }
     </script>
